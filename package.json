@@ -1,0 +1,18 @@
+{
+  "name": "valina_nodejs_project",
+  "version": "1.0.0",
+  "description": "this is Valina CRUD Project Basic",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "author": "Salim Abukar",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.4.5"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.4"
+  }
+}
