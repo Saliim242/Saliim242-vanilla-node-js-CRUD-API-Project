@@ -4,22 +4,14 @@ module.exports = async (request) => {
       let body = "";
       request.on("data", (chunk) => {
         body += chunk;
-        console.log("object :>> ");
+        console.log(body);
       });
-      //   request.on("data", (chunk) => {
-      //     body += chunk;
-      //   });
-
       request.on("end", () => {
         resolve(JSON.parse(body));
       });
-
-      //   request.on("end", () => {
-      //     resolve(JSON.parse(body));
-      //   });
-    } catch (error) {
-      console.log(error);
-      reject(error);
+    } catch (err) {
+      console.log(err);
+      reject(err);
     }
   });
 };
